@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --index: calc(1vh + 1vw)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: calc(var(--index) * 3);
+    background: rgba(0 , 0 , 0 , .2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    width: 9%;
+    height: calc(var(--index) * 2);
+    margin-top: calc(var(--index) * 0.60);
+    font-size: calc(var(--index) * 1);
+    margin-left: .4%;
+    border-radius: 8px;
+    border: 1px solid #222;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    line-height: calc(var(--index) * 2);
+}
+
+input {
+    width: 80%;
+    height: calc(var(--index) * 2);
+    margin-top: calc(var(--index) * 0.60);
+    border-radius: 8px;
+    border: 1px solid #222;
+    background: rgba(0, 0, 0, .5);
+    padding-left: 1%;
+}
+
+button {
+    width: 9%;
+    height: calc(var(--index) * 2);
+    background: rgba(0, 0, 0, .5);
+    margin-top: calc(var(--index) * 0.60);
+    border-radius: 8px;
+    border: 1px solid #222;
+    margin-right: 10px;
+}
+
+.messages {
+    list-style: none;цццц
+}
+
+.messages > li {
+    font-size: calc(var(--index));
+    padding: 10px;
+}
+
+.messages > li > span {
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+.messages > li:nth-child(odd) {
+    background: #efefef;
+}
